@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
-    "lint": "eslint --ext js,ts './**/*.{ts,js}'"
+    "lint": "eslint --ext js,ts './**/*.{ts,js}'",
+    "commitlint": "commitlint -f 62c90dfe"
   },
   "devDependencies": {
     "@aws-cdk/assert": "1.24.0",
