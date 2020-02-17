@@ -1,0 +1,28 @@
+{
+  "name": "@creativepenguin/cdk-static-site",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "lint": "eslint --ext js,ts './**/*.{ts,js}'"
+  },
+  "devDependencies": {
+    "@aws-cdk/assert": "1.24.0",
+    "@commitlint/cli": "8.3.5",
+    "@creativepenguin/standards": "1.0.0-rc.1",
+    "@types/node": "10.17.5",
+    "typescript": "3.7.2",
+    "eslint": "6.8.0"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-cloudfront": "1.24.0",
+    "@aws-cdk/aws-route53": "1.24.0",
+    "@aws-cdk/aws-route53-targets": "1.24.0",
+    "@aws-cdk/aws-s3": "1.24.0",
+    "@aws-cdk/aws-s3-deployment": "1.24.0",
+    "@aws-cdk/aws-ssm": "1.24.0",
+    "@aws-cdk/core": "1.24.0"
+  }
+}
