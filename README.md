@@ -49,6 +49,11 @@ A prefix for the SSM key used when looking up a certificate ARN. (Default: `/cer
 
 This value is ignored if no `domainName` is provided.
 
+### `siteDirectory`
+
+Path to the static site directory, relative to the directory `cdk deploy` is run in. The
+contents of this directory will be copied to the s3 bucket. (Defaults: `./dist`)
+
 ## Manual Setup Procedures
 
 The following must be done before running a deploy. If using a custom domain.

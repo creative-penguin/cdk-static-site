@@ -29,6 +29,13 @@ export interface StaticSiteProps extends cdk.StackProps {
     * Defaults to: /certificates/
     */
    ssmCertificatePrefix?: string;
+
+   /**
+    * Path to the static site directory, relative to the directory `cdk deploy` is run in.
+    * The contents of this directory will be copied to the s3 bucket.
+    * Defaults to: ./dist
+    */
+   siteDirectory?: string;
 }
 
 export class StaticSite extends cdk.Stack {
@@ -96,7 +103,7 @@ export class StaticSite extends cdk.Stack {
       // Deploy the site files and invalidate the distribution cache
       new BucketDeployment(this, 's3Deploy', {
          destinationBucket: bucket,
-         sources: [ Source.asset('./dist') ],
+         sources: [ Source.asset(props?.siteDirectory || './dist') ],
          distribution: distribution,
          distributionPaths: [ '/*' ],
       });
