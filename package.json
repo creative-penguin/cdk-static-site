@@ -1,8 +1,12 @@
 {
   "name": "@creativepenguin/cdk-static-site",
-  "version": "0.1.0",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "version": "0.2.0",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "author": "Jim Jenkins <jim@creativepenguin.net",
+  "license": "MIT",
+  "repository": "https://gihub.com/creative-penguin/cdk-static-site",
+  "homepage": "https://github.com/creative-penguin/cdk-static-site#readme",
   "scripts": {
     "build": "tsc",
     "prepare": "npm run build",
