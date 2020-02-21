@@ -1,6 +1,6 @@
 {
   "name": "@creativepenguin/cdk-static-site",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
   "author": "Jim Jenkins <jim@creativepenguin.net",
@@ -21,7 +21,7 @@
     "eslint": "6.8.0"
   },
   "peerDependency": {
-     "@aws-cdk/core": "1.25.0"
+    "@aws-cdk/core": "1.25.0"
   },
   "dependencies": {
     "@aws-cdk/aws-cloudfront": "1.25.0",
